@@ -21,10 +21,28 @@
       height:140px; overflow:hidden;}
     .list li img {width:100%; display:block;}
 
-    /* max-width: 768xp 0px ~ 768px */
+    /* max-width: 768px 0px ~ 768px */
     @media screen and (min-width: 768px) {
         /* body {background-color: red;} */
+        #wrap { padding: 0 2%; }
+        h2 { padding-left: 0px; }
         .list li { height: 160px; width: 32.5%;}
+    }
+
+   /* PC 1200px 이상 ~ 1400px 이하*/
+    @media screen and (min-width: 1024px) {
+        /* body {background-color: red;}  */
+        h2 { padding-left: 0px; }
+        #wrap { max-width:1400px; margin: 0 auto; padding:0;}
+        h2 { font-size: 24px; text-align: center;}
+        .list li { height: 180px; width: 24.5%;  }
+    }
+
+    @media screen and (min-width: 1400px) {
+        /* body {background-color: red;}  */
+        h2 { padding-left: 0px; }
+        #wrap { padding:0;}
+        .list li { height: 180px; width: 24.5%; }
     }
   </style>
 </head>
