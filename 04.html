@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grid</title>
+  <style>
+    #container { width:500px; height:300px; margin:0 auto;
+      display:grid; border: 1px solid red;
+    grid-template-columns:100px 100px 100px auto;
+    grid-template-rows: 100px 100px auto;
+    row-gap:20px; column-gap: 10px;
+    }
+    #container > div {border: 1px solid #ccc;}
+    .item1 { grid-column-start: 1; grid-column-end:3;
+      grid-row-start:1; grid-row-end:3;
+      background-color: cornflowerblue;}
+    .item2 {}
+    .item3 {}
+    .item4 {grid-column-start: 3; grid-column-end:5;
+      grid-row-start:2; grid-row-end:3;
+      background-color: chocolate;}
+  </style>
 </head>
 <body>
-  
+<div id="container">
+  <div class="item1"> 01</div>
+  <div class="item2"> 02</div>
+  <div class="item3"> 03</div>
+  <div class="item4"> 04</div>
+</div>
 </body>
 </html>
